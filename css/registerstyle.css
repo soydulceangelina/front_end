@@ -1,7 +1,6 @@
 body{
     margin: 0;
     font-family: 'Muli', sans-serif;
-    background-color:  #06908F;
 }
 
 .header{
@@ -66,35 +65,81 @@ body{
     color: white;
 }
 
-.main{
-    height: 260px;
-    text-align: center;
+.login{
+    background: linear-gradient(#06908F,#9D8DF1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    min-height: calc(100vh - 200px);
 }
 
-.main__title{
-    color: white;
-    font-size: 25px;
-}
-
-.input{
-    background-color: rgba(255, 255, 255, 0.2);
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
     border-radius: 45px;
     color: white;
+    padding: 30px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    background-color: transparent;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 2px solid white;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
-    height: 50px;
-    padding: 0px 20px;
-    width: 70%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
     outline: none;
+    height: 50px;
 }
 
 ::placeholder{
     color: white;
 }
 
+.button{
+    background: rgba(255, 255, 255, 0.3);
+    border: 0;
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.login__container a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.login__container a:hover{
+    text-decoration: underline;
+}
+
 .footer{
-    background-color: #06908F;
+    background-color: #9D8DF1;
     display: flex;
     align-items: center;
     height: 100px;
